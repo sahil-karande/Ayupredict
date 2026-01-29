@@ -45,3 +45,10 @@ def predict_endpoint(data: InputData):
         import traceback
         traceback.print_exc()
         raise HTTPException(status_code=500, detail=str(e))
+    from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def root():
+    return {"status": "AyuPredict backend running"}
