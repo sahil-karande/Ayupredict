@@ -1,0 +1,52 @@
+/* 🌿 App Background and Intro Screen */
+.app-bg {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #d9ead3, #e3f0d0, #f6f9f1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: background 0.8s ease;
+}
+
+.intro-screen {
+  text-align: center;
+}
+
+.intro-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #388e3c;
+  margin-bottom: 0.5rem;
+}
+
+.intro-subtitle {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1.8rem;
+}
+
+.start-btn {
+  background: linear-gradient(135deg, #81c784, #66bb6a);
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(102, 187, 106, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.start-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(102, 187, 106, 0.6);
+}
+
+.intro-subtext {
+  color: #555;
+  font-size: 0.95rem;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
