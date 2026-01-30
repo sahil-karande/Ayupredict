@@ -1,3 +1,4 @@
+const API_URL = import.meta.env.VITE_API_URL;
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ResultDisplay from "./ResultDisplay";
@@ -131,7 +132,8 @@ export default function PredictionForm() {
         exercise_days: Number(formData.exercise_days),
       };
 
-      const res = await axios.post("http://127.0.0.1:8000/predict", payload);
+      const res = await axios.post(`${API_URL}/predict`, payload);
+
 
       const resultData = {
         Body_Damage_Percent: res.data.Body_Damage_Percent,
